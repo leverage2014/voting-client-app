@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { renderIntoDocument, scryRenderedDOMComponentsWithClass, Simulate } from 'react-addons-test-utils';
-import {List, Map} from 'immutable';
-import Results from '../../src/components/Results';
-import {expect} from 'chai';
+import { List, Map } from 'immutable';
+import { Results } from '../../src/components/Results';
+import { expect } from 'chai';
 
 describe('Results', () => {
 
@@ -38,7 +38,7 @@ describe('Results', () => {
     expect(nextInvoked).to.equal(true);
   });
 
-  
+
   it('renders the winner when there is one', () => {
     const component = renderIntoDocument(
       <Results winner="Trainspotting"
